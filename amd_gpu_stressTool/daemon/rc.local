@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -x
+dhclient &
+stress_path="/home/test/Desktop/1946_ROCm"
+
+rb=$(sudo shutdown -r +13)
+${rb}
+
+source ${stress_path}/ctrl.sh
