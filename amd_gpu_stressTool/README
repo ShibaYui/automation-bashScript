@@ -8,3 +8,34 @@ just a automatic-script tool for doing amd-gpu stress-validation
 
 A script tool for automation through the integration of AMD-ROCm
 Ref. https://github.com/ROCm/ROCm
+
+FILE STRUCTURE
+	./
+	├── 8thChapter
+	│   ├── 8thChapter.sh
+	│   ├── agt
+	│   ├── babel.conf
+	│   ├── bak_8thChapter.sh
+	│   ├── gemm
+	│   ├── gst_sgemm_30min.conf
+	│   ├── gst_sgemm_5min.conf
+	│   ├── ipmi.sh
+	│   ├── libbabel.so
+	│   ├── libgst.so
+	│   ├── log_8_1
+	│   ├── log_8_2
+	│   ├── log_8_3
+	│   ├── log_8_4
+	│   └── reset.sh
+	├── agt
+	├── counter
+	├── ctrl.sh
+	├── daemon
+	│   └── rc.local
+	├── gemm
+	├── gst_sgemm_5min.conf
+	├── libbabel.so
+	├── libgst.so
+	├── README
+	├── reset.sh
+	└── rvs
