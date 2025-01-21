@@ -1,0 +1,46 @@
+##	Filename: README
+##	Author: yu1
+##	Date: 2024-12-27 17:57:47 +0800
+## 
+##	Description:
+##		warm/cold boot automation tools & modules
+##
+##		if you want to add new item in automatic on/off testing
+##		you can make a new function module (like module_lspci.sh);
+##		and add this command in "auto.sh" as below:
+##		source <module_name>.sh ${cy_times} ${path}
+##
+## 	FileStructure:
+##		./
+##		├── auto.sh
+##		├── log_20250121_1737453318 	## log-files demo
+##		│   ├── cal_timer
+##		│   ├── count
+##		│   ├── ipmiInfo_0.log
+##		│   ├── ipmiInfo_1.log
+##		│   ├── ipmiInfo_all.log
+##		│   ├── lspci_0.log
+##		│   ├── lspci_1.log
+##		│   ├── lspci_all.log
+##		│   └── main.log
+##		├── module_IPMI.sh
+##		├── module_lspci.sh
+##		├── rc_config                   ## for setting daemon
+##		│   └── rc.local
+##		├── README
+##		└── reset.sh                    ## for collecting log-files
+##
+
+2024-12-30 15:20:35 +0800
+	establish script "reset.sh" for LOGFILEs collected
+
+2025-01-08 14:06:22 +0800
+	add "define.sh" for PATH & command defined
+
+2025-01-21 16:50:25 +0800
+	remove "define.sh"
+	add "module_lspci.sh", variable assignment by main script (auto.sh)
+	Ref. https://tldp.org/LDP/abs/html/varassignment.html
+
+	add "module_IPMI.sh"
+

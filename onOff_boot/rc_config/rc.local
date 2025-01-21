@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -x
+dhclient &
+exec_sh="/root/sample.sh"
+
+#rb=$(sudo shutdown -r +13)
+#${rb}
+
+source "$exec_sh"

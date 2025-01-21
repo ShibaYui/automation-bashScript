@@ -1,0 +1,23 @@
+The 0 time reboot Power-on Time: Tue, 21 Jan 2025 17:55:06 +0800
+Power-on/off time span: sec
+===========================================================================
+PCIe Result: Pass
+IPMI Info. Result: Pass
+Power-on/off time-span: 0 sec
+The 1 time reboot Power-on Time: Tue, 21 Jan 2025 17:55:06 +0800
+===========================================================================
+PCIe Result: Pass
+IPMI Info. Result: Pass
+Power-on/off time-span: 4 sec
+The 2 time reboot Power-on Time: Tue, 21 Jan 2025 17:55:10 +0800
+===========================================================================
+PCIe Result: Pass
+IPMI Info. Result: Pass
+Power-on/off time-span: 2 sec
+The 3 time reboot Power-on Time: Tue, 21 Jan 2025 17:55:12 +0800
+===========================================================================
+PCIe Result: Pass
+IPMI Info. Result: Pass
+Power-on/off time-span: 1 sec
+The 4 time reboot Power-on Time: Tue, 21 Jan 2025 17:55:13 +0800
+===========================================================================
