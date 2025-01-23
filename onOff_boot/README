@@ -13,6 +13,7 @@
 ## 	FileStructure:
 ##		./
 ##		├── auto.sh
+##		├── ipmiColdBoot.sh
 ##		├── log_20250121_1737453318 	## log-files demo
 ##		│   ├── cal_timer
 ##		│   ├── count
@@ -44,3 +45,5 @@
 
 	add "module_IPMI.sh"
 
+2025-01-23 10:59:04 +0800
+	add "ipmiColdBoot.sh"
