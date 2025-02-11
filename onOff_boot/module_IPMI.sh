@@ -12,12 +12,13 @@
 cy_times=$1
 path=$2
 
+funcName="ipmiInfo"
 cmd=$(ipmitool mc info)
 log_main="${path}/main.log"
-log_old="${path}/ipmiInfo_0.log"
-log_new="${path}/ipmiInfo_1.log"
-log_all="${path}/ipmiInfo_all.log"
-log_errorCounter="${path}/ipmiInfo_error.log"
+log_old="${path}/${funcName}_0.log"
+log_new="${path}/${funcName}_1.log"
+log_all="${path}/${funcName}_all.log"
+log_errorCounter="${path}/${funcName}_error.log"
 
 
 if [[ ${cy_times} == 1 ]]; then

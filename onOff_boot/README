@@ -47,3 +47,6 @@
 
 2025-01-23 10:59:04 +0800
 	add "ipmiColdBoot.sh"
+
+2025-02-11 16:20:36 +0800
+	add variable "funcName"

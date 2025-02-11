@@ -12,12 +12,13 @@
 cy_times=$1
 path=$2
 
+funcName="lspci"
 cmd=$(lspci |grep -i net)
 log_main="${path}/main.log"
-log_old="${path}/lspci_0.log"
-log_new="${path}/lspci_1.log"
-log_all="${path}/lspci_all.log"
-log_errorCounter="${path}/lspci_error.log"
+log_old="${path}/${funcName}_0.log"
+log_new="${path}/${funcName}_1.log"
+log_all="${path}/${funcName}_all.log"
+log_errorCounter="${path}/${funcName}_error.log"
 
 
 if [[ ${cy_times} == 1 ]]; then
