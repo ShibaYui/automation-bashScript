@@ -10,7 +10,7 @@
 > Release_Date: 2025-04-26 08:11:06 +0800
 
 # Name
-> sync_via_scp
+> sync_via_rsync
 
 ## Ref.
 
@@ -22,9 +22,12 @@
 ## Packaging
 
 ## Usage
-`./sync_via_scp.sh`
+`./sync_via_rsync.sh`
 
 ## Release
 * 2025-04-26 08:11:06 +0800
 	founder edition
+
+* 2025-04-26 08:44:37 +0800
+change filename `sync_via_scp.sh` -> `sync_via_rsync.sh`
 

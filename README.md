@@ -41,3 +41,6 @@
 
 * 2025-04-26 08:28:42 +0800
     update README -> README.md
+
+* 2025-04-26 08:43:22 +0800
+	change name "sync_via_scp" -> "sync_via_rsync"
