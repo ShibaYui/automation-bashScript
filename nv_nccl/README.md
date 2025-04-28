@@ -43,16 +43,19 @@ NCCL 支援在單一節點或多個節點上安裝任意數量的 GPU，並且�
 
 ## Command
 > single node
-`mpirun --allow-run-as-root -x  NCCL_DEBUG=INFO -host <ip_addr> -np 1 ./all_reduce_perf -b 8 -e 8G -f 2 -g 4`
+```bash
+mpirun --allow-run-as-root -x  NCCL_DEBUG=INFO -host <ip_addr> -np 1 ./all_reduce_perf -b 8 -e 8G -f 2 -g 4
+```
 
 > multi node
-`mpirun --allow-run-as-root --host <ip_addr1>,<ip_addr2> \
+```bash
+mpirun --allow-run-as-root --host <ip_addr1>,<ip_addr2> \
   -np 2 --mca btl_tcp_if_include=enP5p9s0 \
   --mca btl ^openib \
   -x NCCL_SOCKET_IFNAME=enP5p9s0 \
   -x PATH -x LD_LIBRARY_PATH \
   ./all_reduce_perf -b 1M -e 8G -f 2 -g 1
-`
+```
 
 > hostfile
 多IP（node）的情況下可以node ip_address寫入`hostfile`，格式如下：
@@ -60,7 +63,7 @@ aa.aa.aa.aa slot=<要使用MPI Process數>
 
 ## Inatallation
 > Debian/Ubuntu
-```
+```bash
 $ # Install tools to create debian packages
 $ sudo apt install build-essential devscripts debhelper fakeroot
 $ # Build NCCL deb package
@@ -69,7 +72,7 @@ $ ls build/pkg/deb/
 ```
 
 > RedHat/CentOS
-```
+```bash
 $ # Install tools to create rpm packages
 $ sudo yum install rpm-build rpmdevtools
 $ # Build NCCL rpm package
@@ -78,13 +81,13 @@ $ ls build/pkg/rpm/
 ```
 
 > OS-agonstic tarball
-```
+```bash
 $ make pkg.txz.build
 $ ls build/pkg/txz/
 ```
 
 > Testing
-```
+```bash
 $ git clone https://github.com/NVIDIA/nccl-tests.git
 $ cd nccl-tests
 $ make
