@@ -22,7 +22,9 @@
 ## Packaging
 
 ## Usage
-`./sync_via_rsync.sh`
+```bash
+./sync_via_rsync.sh
+```
 
 ## Release
 * 2025-04-26 08:11:06 +0800

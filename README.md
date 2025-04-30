@@ -46,4 +46,7 @@
 	change name "sync_via_scp" -> "sync_via_rsync"
 
 * 2025-04-29 06:16:53 +0800
-	add script `update_Broadcom_driver.sh` & `wifi_autoChecking.sh`	
+	add script `update_Broadcom_driver.sh` & `wifi_autoChecking.sh`
+
+* 2025-04-30 16:27:15 +0800
+	add script `change_to_txt.sh` & `make_weeklyReport.sh`
